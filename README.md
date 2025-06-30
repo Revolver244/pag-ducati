@@ -1,27 +1,135 @@
-# CarreraDucatiWebapp
+Pag Ducati
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Aplicación web inspirada en la marca Ducati, construida con Angular y Angular Material. Incluye sistema de autenticación, navegación lateral, páginas de contenido promocional y un diseño totalmente responsivo.
 
-## Code scaffolding
+🏍️ Descripción general
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Proyecto académico/demo que replica una landing page con distintas secciones (Home, Instrucciones, Bases de Promoción, Nuevo Look, Políticas de Privacidad y Términos). El objetivo es practicar la integración de Angular 16 con Angular Material, formularios reactivos, rutas protegidas y maquetación adaptable.
 
-## Build
+Funcionalidades principales
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Módulo
 
-## Running unit tests
+Descripción
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Autenticación
 
-## Running end-to-end tests
+Registro y login con validaciones y máscaras de entrada (ngx-mask).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Layout
 
-## Further help
+Header fijo, sidebar colapsable y footer reutilizable.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Navegación
+
+Ruteo lazy loading entre pantallas: Home, Bases de Promoción, Instrucciones, Nuevo Look, etc.
+
+Contenido multimedia
+
+GIF promocional centrado en la portada.
+
+Responsive
+
+Flex layout + SCSS, optimizado para móvil y desktop.
+
+🛠️ Tecnologías y dependencias
+
+Angular 16 + Angular CLI
+
+Angular Material (Sidenav, Form Field, Input, Button, Icon…)
+
+TypeScript 5 / RxJS 7
+
+SCSS y Flexbox / CSS Grid
+
+Node.js 18
+
+ngx-mask para máscaras de formularios
+
+⚙️ Requisitos previos
+
+Herramienta
+
+Versión mínima
+
+Node.js
+
+18.x
+
+npm
+
+9.x
+
+Angular CLI
+
+17.x
+
+Comprueba tu versión con node -v y ng v.
+
+🚀 Instalación y ejecución local
+
+# 1. Clona el repositorio
+git clone https://github.com/TU_USUARIO_GITHUB/pag-ducati.git
+cd pag-ducati
+
+# 2. Instala dependencias
+npm install
+
+# 3. Levanta el servidor de desarrollo
+npm start          # alias de: ng serve -o
+
+Abrirá http://localhost:4200/ en tu navegador predeterminado.
+
+Scripts útiles
+
+Comando
+
+Acción
+
+npm start
+
+Compila en modo dev y recarga en caliente.
+
+npm run build
+
+Compila para producción en dist/.
+
+npm run lint
+
+Ejecuta linter ESLint.
+
+📁 Estructura de carpetas
+
+src/
+  app/
+    partials/          # Header, Footer, Sidebar
+    screens/
+      home-screen/
+      login-screen/
+      registro-screen/
+      bases-promocion-screen/
+      instrucciones-screen/
+      nuevo-look-screen/
+      politicas-de-privacidad/
+      termminos-condiciones-screen/
+  assets/
+    img/
+      videojuego.gif
+
+🌐 Despliegue
+
+Para generar la versión de producción:
+
+npm run build
+
+El resultado queda en dist/pag-ducati/. Sube el contenido a tu hosting preferido (GitHub Pages, Firebase Hosting, Netlify…).
+
+✍️ Autor
+
+Mariano López – Desarrollador & estudiante BUAPTwitter: @tu_usuario
+
+📄 Licencia
+
+Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo LICENSE para más información.
