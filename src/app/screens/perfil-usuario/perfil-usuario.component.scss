@@ -1,0 +1,52 @@
+.perfil-contenido {
+  h2 {
+    font-weight: bold;
+    color: #c80000;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 1rem;
+  }
+}
+
+.barra-inferior-texto {
+  background-color: #c80000;
+  color: #fff; // Mejor contraste visual
+  padding: 5px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.inputs-login {
+  width: 100%;
+}
+
+.invalid-feedback {
+  color: #CD0000;
+  font-size: 12px;
+}
+
+.img-perfil-usuario {
+  object-fit: cover;
+  border: 2px solid #CD0000;
+  border-radius: 50%;
+}
+
+input[type="file"] {
+  font-size: 13px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

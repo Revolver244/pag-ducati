@@ -1,0 +1,109 @@
+<section class="home">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode="over" position="start">
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+      <div class="body-home">
+ 
+    <!-- Contenedor para imagen promocional con barra inferior -->
+    <div class="promo-header-container mt-3 position-relative">
+    <img src="/assets/images/header-img.png" alt="Lentes Carrera Ducati" class="img-fluid" />
+
+    <!-- Barra roja con texto debajo de la imagen -->
+    <div class="barra-inferior-texto">
+    <span class="texto-barra">Ducati Motor Holding S.p.A. Official Licensed Product</span>
+    </div>
+    </div>
+
+    <!--Titulo de bases de promoción-->
+<div class="titulo-bases text-center">
+  BASES DE LA PROMOCIÓN
+</div>
+
+        <!-- Pasos ilustrados -->
+        <div class="pasos-promocion">
+          <div class="paso-item mb-3">
+  <img src="/assets/images/1-compra-titulo.png" alt="Paso 1: Compra" class="img-fluid" />
+  
+  <!-- Línea con texto + imagen al lado -->
+  <div class="text-image-inline text-center mt-2">
+    <span>productos participantes</span>
+    <img src="/assets/images/logo-marcas.png" alt="Carrera | Ducati" class="logo-inline" />
+    <strong>en liverpool/Devlyn</strong>
+  </div>
+</div>
+
+
+          <div class="paso-item mb-3">
+            <img src="/assets/images/2-registra-titulo.png" alt="Paso 2: Registra" class="img-fluid" />
+            <p class="text-center">registra tus códigos en<br /><strong>www.acelerayganaconcarrera.com.mx</strong></p>
+          </div>
+
+          <div class="paso-item mb-3">
+            <img src="/assets/images/3-acumula-titulo.png" alt="Paso 3: Acumula" class="img-fluid" />
+            <p class="text-center">acumula puntos con cada compra y juega por puntos extras</p>
+          </div>
+
+          <div class="text-center">
+            <img src="/assets/images/4-gana-titulo.png" alt="Paso 4: Gana" class="img-fluid" />
+            <h3 class="titulo-premio mt-3">Una <strong>Moto Ducati</strong> al finalizar la promoción</h3>
+          </div>
+
+          <div class="imagen-moto mt-3 mb-4 text-center">
+            <img src="/assets/images/moto.png" alt="Moto Ducati" class="img-fluid" />
+          </div>
+
+
+          <!-- Sección 3: Texto informativo -->
+          <div class="texto-promocion mt-4 mb-5 px-4">
+            <p class="texto-legal">
+            Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum.</p>
+
+            <p class="texto-legal">Stet clita kasd gubergren, no sea takimata sanctus
+            est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+            sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua.</p>
+
+            <p class="texto-legal">At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est.</p>
+
+            <p class="texto-legal">Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua.</p>
+
+            <p class="texto-legal">At vero eos et accusam et justo duo dolores et ea
+            rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut.
+            </p>
+        </div>
+        </div>
+
+
+
+        <!-- Footer si aplica -->
+        <div class="footer mt-5">
+          <app-footer-app></app-footer-app>
+        </div>
+      </div>
+    </mat-drawer-container>
+  </div>
+</section>

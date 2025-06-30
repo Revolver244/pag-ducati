@@ -1,0 +1,29 @@
+<section class="home">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode="over" position="start">
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+      <div class="body-home">
+
+        <div class="videojuego-content">
+  <h1>Rapido !! haz puntos!!</h1>
+  <img
+    src="https://64.media.tumblr.com/e28b30a44b42a3fcfbc87af6f2b7c52d/22a659331481bca7-67/s1280x1920/abc013ddb95ce7529d84653e8a35797336f7ce8a.gifv"
+    alt="Animación videojuego"
+    class="videojuego-gif"
+  />
+</div>
+
+
+        <!-- Footer si aplica -->
+        <div class="footer mt-5">
+          <app-footer-app></app-footer-app>
+        </div>
+      </div>
+    </mat-drawer-container>
+  </div>
+</section>
