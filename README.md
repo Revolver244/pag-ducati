@@ -1,6 +1,5 @@
 # Pagina Ducati
 
-![Ducati Banner](docs/assets/banner.png)
 
 Aplicación web inspirada en la marca **Ducati**, construida con Angular y Angular Material. Incluye sistema de autenticación, navegación lateral, páginas de contenido promocional y un diseño totalmente responsivo.
 
